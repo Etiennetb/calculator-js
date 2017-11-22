@@ -1,0 +1,105 @@
+/*.box{
+	
+	align-content: center;
+
+
+}
+
+.touch {
+	height: 30px;
+	width: 40px;
+}
+
+.display input{
+	position: relative;
+	left: 2px;
+	top: 2px;
+	height: 35px;
+	color: black;
+	text-align: right;
+	font-size: 21px;
+	font-family: "Roboto";
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  height: 100vh;
+  width:30%;
+  vertical-align: center;
+  background-color: white;
+  margin-top: 150px;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#display {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-row-gap: 5px;
+  width: 200px;
+  margin: 50px auto;
+  padding: 25px 20px;
+  background-image: white;
+  border-radius: 10px;
+/*  -webkit-box-shadow: 0px 3px 10px 5px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 3px 10px 5px rgba(0,0,0,0.2);*/
+  box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.2);
+  transition: all .3s ease-out;
+}
+
+
+#result {
+  height: 50px;
+  width: 88.5%;
+  border: 1px solid #c6c6c6;
+  border-radius: 3px;
+  background-color: #e2ebf0;
+  font-family: 'Roboto';
+  padding-left: 20px;
+  padding-top: 10px;
+  font-size: 1.4em;
+  -webkit-box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.4);
+  -moz-box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.4);
+  box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,0.4);
+}
+
+.line {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 5px;
+  margin-top: 5px;
+}
+
+#top {
+  grid-template-columns: 3.05fr 0.95fr;
+}
+
+#bottom {
+  grid-template-columns: 0.975fr 0.975fr 2.05fr;
+  clear: both;
+}
+
+.touch {
+  border: 1px solid #c6c6c6;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  border-radius: 3px;
+  text-align: center;
+  font-family: 'Helvetica', sans-serif;
+  padding: 5px 0;
+}
+
+#equal {
+  background-image: linear-gradient(to top, #58cc2a 0%, #6de83c 100%);
+}
+
+#clear {
+  background-image: linear-gradient(to top, #ef2e0b 0%, #ff6347 100%);
+}
